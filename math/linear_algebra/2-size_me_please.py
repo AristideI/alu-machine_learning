@@ -5,6 +5,7 @@
  this module will return the size of the array
 """
 
+
 def matrix_shape(matrix):
     """
     matrix: list of list
@@ -16,5 +17,6 @@ def matrix_shape(matrix):
         matrix = matrix[0]
     return shape
 
+
 if __name__ == "__main__":
-   matrix_shape_function = __import__('2-size_me_please').matrix_shape
+    matrix_shape_function = __import__('2-size_me_please').matrix_shape
