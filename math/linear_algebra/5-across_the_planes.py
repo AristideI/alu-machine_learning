@@ -9,15 +9,8 @@ def add_matrices2D(mat1, mat2):
     function add matrices that adds two matrices
     by adding two elements in the same position
     """
-    if len(mat1) != len(mat2):
+    if len(mat1) != len(mat2) or len(mat1[0]) != len(mat2[0]):
         return None
-    result = []
-    for arr in range(len(mat1)):
-        if len(mat1[arr]) != len(mat2[arr]):
-            return None
-    innerArr = []
-    for num in range(len(mat1[arr])):
-        innerArr.append(mat1[arr][num] + mat2[arr][num])
-        result.append(innerArr)
-
-    return result
+    return [
+        [mat1[i][j] + mat2[i][j] for j in range(len(mat1[0]))] for i in range(len(mat1))
+    ]
