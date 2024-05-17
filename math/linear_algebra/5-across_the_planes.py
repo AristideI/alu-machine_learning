@@ -4,7 +4,7 @@ This module is implementing logic of adding matrices
 """
 
 
-def add_matrices(mat1, mat2):
+def add_matrices2D(mat1, mat2):
     """
     function add matrices that adds two matrices
     by adding two elements in the same position
