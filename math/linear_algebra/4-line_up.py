@@ -12,9 +12,9 @@ function add arrays that adds two arrays
 by adding two elements in the same position
     """
     if len(arr1) != len(arr2):
-          return None
+        return None
     
     result = []
     for num in range(len(arr1)):
-         result.append(arr1[num] + arr2[num])
+        result.append(arr1[num] + arr2[num])
     return result
